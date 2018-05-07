@@ -1,0 +1,124 @@
+.interlocutors {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  background-color: #293038;
+  box-shadow: -2px 0 10px #000;
+  &__search {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #40464d;
+    input {
+      padding: 0 10px 0 50px;
+      width: 100%;
+      max-width: 310px;
+      height: 40px;
+      color: #818689;
+      background-color: #363d45;
+      border: none;
+      border-radius: 30px;
+      box-shadow: 2px 2px 5px #333;
+    }
+    img {
+      position: absolute;
+      left: 45px;
+    }
+  }
+
+  &__wrap {
+    position: relative;
+  }
+  &__bar {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    display: block;
+    width: 3px;
+    height: 100px;
+    background-color: #2b80ff;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+  &__user {
+    position: relative;
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 50px;
+      height: 1px;
+      background-color: #40454c;
+    }
+  }
+  &__user-online {
+    position: absolute;
+    top: 15px;
+    left: 15 px;
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #2dc100;
+    border-radius: 50%;
+  }
+  &__avatar {
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 185px;
+  }
+  &__name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+  }
+  &__msg {
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 300;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #94989c;
+  }
+  &__actions {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  &__actions-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    span {
+      display: block;
+      width: 3px;
+      height: 3px;
+      background-color: #fff;
+    }
+  }
+  &__time-left {
+    font-size: 11px;
+    font-weight: 500;
+    color: #94979a;
+  }
+}
