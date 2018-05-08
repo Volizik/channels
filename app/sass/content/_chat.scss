@@ -1,4 +1,146 @@
 .chat {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
   background-color: #e9ecf1;
+  &__header {
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #d9dfe1;
+  }
+  &__header-text {
+    flex-grow: 1;
+  }
+  &__header-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid #d9dfe1;
+    img {
+      width: 25px;
+      height: 25px;
+      object-fit: contain;
+    }
+  }
+
+  &__body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  &__message {
+    display: flex;
+    align-items: flex-start;
+    max-width: 80%
+  }
+  &__user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__user-icon {
+    margin-bottom: 7px;
+    display: block;
+    width: 37px;
+    height: 37px;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+  &__msg-time {
+    font-size: 11px;
+    font-weight: 500;
+    color: #616364;
+  }
+  &__msg-text {
+    margin-bottom: 20px;
+    padding: 15px;
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  &__msg-from-interlocutor {
+    .chat__user {
+      margin-right: 10px;
+    }
+  }
+  &__msg-from-my {
+    flex-direction: row-reverse;
+    margin-left: auto;
+    .chat__user {
+      margin-left: 10px;
+    }
+  }
+
+  &__footer {
+    margin-top: auto;
+    padding: 15px;
+    display: flex;
+    align-items: flex-end;
+    background-color: #fff;
+  }
+  &__add {
+
+  }
+  &__add-btn {
+    background-color: transparent;
+    border: none;
+    img {
+      width: 25px;
+      height: 25px;
+      object-fit: contain;
+    }
+  }
+  &__add-list {
+    display: none;
+  }
+  &__add-item {
+
+  }
+  &__input {
+    flex-grow: 1;
+  }
+  &__input-field {
+    min-height: 25px;
+    max-height: 200px;
+    overflow-x: hidden;
+    cursor: text;
+  }
+  &__smile-btn {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    flex-shrink: 0;
+    img {
+      width: 23px;
+      height: 23px;
+      object-fit: contain;
+    }
+  }
+  &__send-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 50%;
+    flex-shrink: 0;
+    img {
+      width: 23px;
+      height: 23px;
+      object-fit: contain;
+    }
+  }
 }

@@ -12,10 +12,14 @@
     align-items: center;
     height: 80px;
     border-bottom: 1px solid #40464d;
+  }
+  &__searchbar {
+    position: relative;
+    width: 100%;
+    max-width: 310px;
     input {
       padding: 0 10px 0 50px;
       width: 100%;
-      max-width: 310px;
       height: 40px;
       color: #818689;
       background-color: #363d45;
@@ -25,7 +29,8 @@
     }
     img {
       position: absolute;
-      left: 45px;
+      left: 20px;
+      top: 14px;
     }
   }
 
