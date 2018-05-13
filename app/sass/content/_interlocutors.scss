@@ -5,6 +5,7 @@
   width: 360px;
   background-color: #293038;
   box-shadow: -2px 0 10px #000;
+  flex-shrink: 0;
   &__search {
     position: relative;
     display: flex;
@@ -72,7 +73,7 @@
   &__user-online {
     position: absolute;
     top: 15px;
-    left: 15 px;
+    left: 15px;
     display: block;
     width: 5px;
     height: 5px;
