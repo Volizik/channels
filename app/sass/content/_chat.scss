@@ -30,6 +30,7 @@
   }
 
   &__body {
+    overflow-x: hidden;
     padding: 25px;
     display: flex;
     flex-direction: column;
@@ -38,7 +39,8 @@
   &__message {
     display: flex;
     align-items: flex-start;
-    max-width: 80%
+    max-width: 80%;
+    flex-shrink: 0;
   }
   &__user {
     display: flex;
