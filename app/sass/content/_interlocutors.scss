@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 360px;
+  width: 100%;
   background-color: #293038;
   box-shadow: -2px 0 10px #000;
   flex-shrink: 0;
@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     height: 80px;
     border-bottom: 1px solid #40464d;
   }
@@ -130,5 +131,25 @@
     font-size: 11px;
     font-weight: 500;
     color: #94979a;
+  }
+
+  // list without action button and message preview
+  &__list--simple {
+    overflow-x: hidden;
+    margin: 20px 0 0;
+    padding: 0;
+    user-select: none;
+    .interlocutors__name {
+      color: #000;
+    }
+    .interlocutors__user {
+      height: 65px;
+      &:before, &:after {
+        display: none;
+      }
+      &:hover {
+        background-color: #fff;
+      }
+    }
   }
 }

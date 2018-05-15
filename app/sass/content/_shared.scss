@@ -5,9 +5,11 @@
   min-height: 600px;
 }
 .checkbox {
+  margin: 0;
   display: block;
   cursor: pointer;
   label {
+    padding: 0;
     input[type="checkbox"] {
       display: none;
       &:checked ~ span {
@@ -67,4 +69,20 @@
       flex-shrink: 0;
     }
   }
+}
+.btn-green {
+  margin: 0 AUTO;
+  display: inline-block;
+  min-width: 160px;
+  height: 35px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #17ad27;
+  border: none;
+  border-radius: 30px;
+}
+
+.c-green {
+  color: #17ad27;
 }
